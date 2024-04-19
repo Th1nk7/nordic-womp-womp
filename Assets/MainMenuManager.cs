@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -9,10 +7,7 @@ using UnityEngine.SceneManagement;
 public class MainMenuManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    public void StartGame()=>SceneManager.LoadScene("TheGame");
-    {
-        
-    }
+    public void StartGame() => SceneManager.LoadScene("TheGame");
 
     public void QuitGame()
     {
