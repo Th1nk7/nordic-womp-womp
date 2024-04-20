@@ -9,6 +9,8 @@ public class Generator : MonoBehaviour
     public GameObject O69E18P1;
     public GameObject O18E69P2;
     public GameObject O69E18P2;
+    public GameObject O18E69P3;
+    public GameObject O69E18P3;
     public int heightSpawn = 38;
     public int lastUsed;
     public GameObject selected;
@@ -19,39 +21,60 @@ public class Generator : MonoBehaviour
     void Update()
     {
         if(transform.position.y+10 > heightSpawn){
-            heightSpawn += 3;
-            if(lastUsed == 1869){
-                Debug.Log("Run1");
-                lastUsed = 6918;
-                temp = Random.Range(1,3);
-                switch(temp){
-                    case 1:
-                        selected = O69E18P1;
-                        break;
-                    
-                    case 2:
-                        selected = O69E18P2;
-                        break;
+            temp = Random.Range(1,3);
+                if(temp == 1){
+                    heightSpawn += 3;
+                    if(lastUsed == 1869){
+                        Debug.Log("Run1");
+                        lastUsed = 6918;
+                        temp = Random.Range(1,3);
+                        switch(temp){
+                            case 1:
+                                selected = O69E18P1;
+                                break;
+
+                            case 2:
+                                selected = O69E18P2;
+                                break;
+                        }
+                        var position = new Vector3(0,heightSpawn-3,0);
+                        Instantiate(selected,position,Quaternion.identity);
+                    }
+                    else if(lastUsed == 6918){
+                        Debug.Log("Run2");
+                        lastUsed = 1869;
+                        temp = Random.Range(1,3);
+                        switch(temp){
+                            case 1:
+                                selected = O18E69P1;
+                                break;
+
+                            case 2:
+                                selected = O18E69P2;
+                                break;
+                        }
+                        var position = new Vector3(transform.position.x,heightSpawn-3,transform.position.z);
+                        Instantiate(selected,position,Quaternion.identity);
+                    }
                 }
-                var position = new Vector3(0,heightSpawn-3,0);
-                Instantiate(selected,position,Quaternion.identity);
-            }
-            else if(lastUsed == 6918){
-                Debug.Log("Run2");
-                lastUsed = 1869;
-                temp = Random.Range(1,3);
-                switch(temp){
-                    case 1:
-                        selected = O18E69P1;
-                        break;
-                    
-                    case 2:
-                        selected = O18E69P2;
-                        break;
+                else if(temp == 2){
+                    heightSpawn += 6;
+                    if(lastUsed == 1869){
+                        Debug.Log("Run3");
+                        lastUsed = 6918;
+                        selected = O69E18P3;
+                        var position = new Vector3(0,heightSpawn-6,0);
+                        Instantiate(selected,position,Quaternion.identity);
+                    }
+                    else if(lastUsed == 6918){
+                        Debug.Log("Run4");
+                        lastUsed = 1869;
+                        selected = O18E69P3;
+                        var position = new Vector3(transform.position.x,heightSpawn-6,transform.position.z);
+                        Instantiate(selected,position,Quaternion.identity);
+                    }
                 }
-                var position = new Vector3(transform.position.x,heightSpawn-3,transform.position.z);
-                Instantiate(selected,position,Quaternion.identity);
-            }
+            
         }
     }
 }
