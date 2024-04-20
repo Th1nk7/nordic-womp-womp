@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChickenMovementScript : MonoBehaviour
 {
@@ -51,6 +52,7 @@ public class ChickenMovementScript : MonoBehaviour
     {
         if(col.gameObject.tag == "BurnChicken"){
             Debug.Log("Died");
+            SceneManager.LoadScene("LostScreen");
         }
 
         else if(Input.GetKey(KeyCode.DownArrow) && col.gameObject.tag == "Down" && MoveReady == true){

@@ -10760,26 +10760,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: -7, y: 23, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 15
-      m_TileSpriteIndex: 7
-      m_TileMatrixIndex: 2
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 6, y: 23, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 15
-      m_TileSpriteIndex: 7
-      m_TileMatrixIndex: 2
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 8
@@ -10812,7 +10792,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 5a5632725611deb4283c5b1c365c67f0, type: 2}
   - m_RefCount: 10
     m_Data: {fileID: 11400000, guid: d4ecd11bac47420439eacd4b99b1a222, type: 2}
-  - m_RefCount: 7
+  - m_RefCount: 5
     m_Data: {fileID: 11400000, guid: 280b78f7516a82f4885049e98880a46c, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -10831,7 +10811,7 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: ff3e5cff0b538ab4299e2bb6daa0084f, type: 3}
   - m_RefCount: 45
     m_Data: {fileID: 21300000, guid: 3bad8baa925cc6e4e82911dd88dae489, type: 3}
-  - m_RefCount: 20
+  - m_RefCount: 18
     m_Data: {fileID: 21300000, guid: 01bb29856eb3e0749abc2a4c2a33d77d, type: 3}
   - m_RefCount: 204
     m_Data: {fileID: 21300000, guid: cbd4dbd5169e0374d9c672b8bfcb41ad, type: 3}
@@ -10874,7 +10854,7 @@ Tilemap:
       e31: 0
       e32: 0
       e33: 1
-  - m_RefCount: 47
+  - m_RefCount: 45
     m_Data:
       e00: 1
       e01: 0
@@ -10929,7 +10909,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 818
+  - m_RefCount: 816
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -18684,7 +18664,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf186bdf4f3c4f4ab82ac9bf2d74dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.004
+  speed: 0.003
   transform: {fileID: 1543060269}
 --- !u!4 &1571916824 stripped
 Transform:
