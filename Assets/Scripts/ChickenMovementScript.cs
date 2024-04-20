@@ -13,6 +13,7 @@ public class ChickenMovementScript : MonoBehaviour
     public Transform transform;
     public float TPDist = 1;
     private AudioSource audioSource;
+    public GameObject EggManager;
 
     // Start is called before the first frame update
     void Start()
@@ -50,7 +51,12 @@ public class ChickenMovementScript : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D col)
     {
-        if(col.gameObject.tag == "BurnChicken"){
+        if(col.gameObject.tag == "Collect"){
+            col.gameObject.SetActive(false);
+            EggManager.GetComponent<EggManagerScript>().UpdateEggCounter();
+        }
+
+        else if(col.gameObject.tag == "BurnChicken"){
             Debug.Log("Died");
             SceneManager.LoadScene("LostScreen");
         }

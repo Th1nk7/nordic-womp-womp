@@ -7,7 +7,10 @@ public class EggManagerScript : MonoBehaviour
 
     public int eggCount;
 
-    // Start is called before the first frame update
+    public void UpdateEggCounter(){
+        eggCount++;
+    }
+
     void Start()
     {
         
