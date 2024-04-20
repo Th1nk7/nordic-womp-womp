@@ -11,11 +11,12 @@ public class ChickenMovementScript : MonoBehaviour
     public string direction;
     public Transform transform;
     public float TPDist = 1;
+    private AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -53,24 +54,28 @@ public class ChickenMovementScript : MonoBehaviour
             MoveReady = false;
             direction = "Down";
             m_Animator.SetTrigger("ChickenPoof");
+            audioSource.Play();
         }
         if(Input.GetKey(KeyCode.UpArrow) && col.gameObject.tag == "Up" && MoveReady == true){
             Debug.Log("Up Correct!");
             MoveReady = false;
             direction = "Up";
             m_Animator.SetTrigger("ChickenPoof");
+            audioSource.Play();
         }
         if(Input.GetKey(KeyCode.LeftArrow) && col.gameObject.tag == "Left" && MoveReady == true){
             Debug.Log("Left Correct!");
             MoveReady = false;
             direction = "Left";
             m_Animator.SetTrigger("ChickenPoof");
+            audioSource.Play();
         }
         if(Input.GetKey(KeyCode.RightArrow) && col.gameObject.tag == "Right" && MoveReady == true){
             Debug.Log("Right Correct!");
             MoveReady = false;
             direction = "Right";
             m_Animator.SetTrigger("ChickenPoof");
+            audioSource.Play();
         }
     }
 }
