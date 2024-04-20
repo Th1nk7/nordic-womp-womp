@@ -49,28 +49,32 @@ public class ChickenMovementScript : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D col)
     {
-        if(Input.GetKey(KeyCode.DownArrow) && col.gameObject.tag == "Down" && MoveReady == true){
+        if(col.gameObject.tag == "BurnChicken"){
+            Debug.Log("Died");
+        }
+
+        else if(Input.GetKey(KeyCode.DownArrow) && col.gameObject.tag == "Down" && MoveReady == true){
             Debug.Log("Down Correct!");
             MoveReady = false;
             direction = "Down";
             m_Animator.SetTrigger("ChickenPoof");
             audioSource.Play();
         }
-        if(Input.GetKey(KeyCode.UpArrow) && col.gameObject.tag == "Up" && MoveReady == true){
+        else if(Input.GetKey(KeyCode.UpArrow) && col.gameObject.tag == "Up" && MoveReady == true){
             Debug.Log("Up Correct!");
             MoveReady = false;
             direction = "Up";
             m_Animator.SetTrigger("ChickenPoof");
             audioSource.Play();
         }
-        if(Input.GetKey(KeyCode.LeftArrow) && col.gameObject.tag == "Left" && MoveReady == true){
+        else if(Input.GetKey(KeyCode.LeftArrow) && col.gameObject.tag == "Left" && MoveReady == true){
             Debug.Log("Left Correct!");
             MoveReady = false;
             direction = "Left";
             m_Animator.SetTrigger("ChickenPoof");
             audioSource.Play();
         }
-        if(Input.GetKey(KeyCode.RightArrow) && col.gameObject.tag == "Right" && MoveReady == true){
+        else if(Input.GetKey(KeyCode.RightArrow) && col.gameObject.tag == "Right" && MoveReady == true){
             Debug.Log("Right Correct!");
             MoveReady = false;
             direction = "Right";

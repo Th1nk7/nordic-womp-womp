@@ -9,6 +9,8 @@ TagManager:
   - Left
   - Right
   - CameraFireCol
+  - BurnChicken
+  - Collect
   layers:
   - Default
   - TransparentFX
