@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraMovementScript : MonoBehaviour
 {
 
-    public float speed = .0008f;
+    public float speed;
     public Transform transform;
 
     // Start is called before the first frame update
