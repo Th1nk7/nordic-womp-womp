@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VictoryScreen.unity
     guid: beedbcd39d4d47a47845b0571e142f36
+  - enabled: 1
+    path: Assets/Scenes/TheGameEndless.unity
+    guid: ac48dc764fc860543bffee2c9df6ff4f
   m_configObjects: {}

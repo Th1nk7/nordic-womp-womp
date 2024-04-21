@@ -2783,8 +2783,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 153732405}
-  - component: {fileID: 153732404}
   - component: {fileID: 153732406}
+  - component: {fileID: 153732407}
   m_Layer: 0
   m_Name: EggManager
   m_TagString: Untagged
@@ -2792,22 +2792,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &153732404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153732403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6c2ce9c16194114ea88828713d37ab6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  eggTextObject: {fileID: 0}
-  eggCount: 0
-  eggCountString: 
-  mText: {fileID: 1983591075}
 --- !u!4 &153732405
 Transform:
   m_ObjectHideFlags: 0
@@ -2919,6 +2903,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &153732407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153732403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d8a5acf239c3d94bbc4d77c8d20c8d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eggTextObject: {fileID: 0}
+  eggCount: 0
+  eggCountString: 
+  mText: {fileID: 1983591075}
 --- !u!1 &161080107
 GameObject:
   m_ObjectHideFlags: 0
@@ -12451,7 +12451,7 @@ GameObject:
   m_Component:
   - component: {fileID: 436294050}
   - component: {fileID: 436294049}
-  - component: {fileID: 436294052}
+  - component: {fileID: 436294056}
   - component: {fileID: 436294051}
   - component: {fileID: 436294053}
   - component: {fileID: 436294054}
@@ -12551,25 +12551,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &436294052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 436294048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30112eb5337e50442b4831c1a12bcf37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bc: {fileID: 436294053}
-  MoveReady: 1
-  m_Animator: {fileID: 436294051}
-  direction: 
-  transform: {fileID: 436294050}
-  TPDist: 1
-  EggManager: {fileID: 153732403}
 --- !u!61 &436294053
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12738,6 +12719,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &436294056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436294048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 143947aeb6901ba48b780e44cc03f1c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bc: {fileID: 436294053}
+  MoveReady: 1
+  m_Animator: {fileID: 436294051}
+  direction: 
+  transform: {fileID: 436294050}
+  TPDist: 1
+  EggManager: {fileID: 153732403}
 --- !u!1 &460877416
 GameObject:
   m_ObjectHideFlags: 0
@@ -26272,7 +26272,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 637, y: 467.5}
+  m_AnchoredPosition: {x: 733.8, y: 467.5}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1636831015
@@ -26563,7 +26563,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1712509153}
   - component: {fileID: 1712509152}
-  - component: {fileID: 1712509151}
+  - component: {fileID: 1712509155}
   - component: {fileID: 1712509150}
   - component: {fileID: 1712509149}
   - component: {fileID: 1712509148}
@@ -26668,25 +26668,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1712509151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1712509147}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30112eb5337e50442b4831c1a12bcf37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bc: {fileID: 1712509149}
-  MoveReady: 1
-  m_Animator: {fileID: 1712509150}
-  direction: 
-  transform: {fileID: 1712509153}
-  TPDist: 1
-  EggManager: {fileID: 153732403}
 --- !u!212 &1712509152
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26850,6 +26831,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1712509155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712509147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 143947aeb6901ba48b780e44cc03f1c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bc: {fileID: 1712509149}
+  MoveReady: 1
+  m_Animator: {fileID: 1712509150}
+  direction: 
+  transform: {fileID: 1712509153}
+  TPDist: 1
+  EggManager: {fileID: 153732403}
 --- !u!1 &1761519652
 GameObject:
   m_ObjectHideFlags: 0
@@ -30281,7 +30281,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 857.4, y: 460.6}
+  m_AnchoredPosition: {x: 901.7, y: 460.6}
   m_SizeDelta: {x: 400, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1983591075
@@ -30304,7 +30304,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 25 / 25
+  m_text: 100
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

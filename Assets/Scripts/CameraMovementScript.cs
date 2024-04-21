@@ -18,6 +18,6 @@ public class CameraMovementScript : MonoBehaviour
     void FixedUpdate()
     {
         transform.position = new Vector3(transform.position.x, transform.position.y+speed,transform.position.z);
-        speed = speed + 0.000003f;
+        speed = speed + 0.000002f;
     }
 }

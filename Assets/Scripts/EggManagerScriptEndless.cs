@@ -6,7 +6,7 @@ using TMPro;
 using System;
 using UnityEngine.SceneManagement;
 
-public class EggManagerScript : MonoBehaviour
+public class EggManagerScriptEndless : MonoBehaviour
 {
     private AudioSource audioSource;
     public GameObject eggTextObject;
@@ -28,10 +28,6 @@ public class EggManagerScript : MonoBehaviour
     void Update()
     {
         eggCountString = eggCount.ToString();
-        mText.text = eggCountString + " / 25";
-        
-        if(eggCount > 24){
-            SceneManager.LoadScene("VictoryScreen");
-        }
+        mText.text = eggCountString;
     }
 }
