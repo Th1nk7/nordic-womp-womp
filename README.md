@@ -1,0 +1,2 @@
+Dette spil er lavet til nordic game jam og er blevet videreudviklede i løbet af de efterfølgende programmeringslektioner. Spillet er lavet med mekanik baseret på kategorien “reflection”, og æstetik baseret på “sense of belonging”
+alle filer der ligger her er til at kunne åbne det som et unity projekt men vi har også lavet en web udgave af spillet som kan spilles på dette link OBS. gør det fullscrean og Quit knappen virker ikke i web versionen
